@@ -1,6 +1,9 @@
 
 ![License Badge](https://img.shields.io/badge/License-ISC-green.svg)
 
+### Deployed app on Heroku 
+https://still-lake-01483.herokuapp.com/
+
 ### Github Username: Wesaboo
 
 Github Email Address: wesaboo@gmail.com
