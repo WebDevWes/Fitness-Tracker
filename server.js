@@ -16,7 +16,7 @@ app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
 // Set up promises with Mongoose
-// mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 // If deployed, connect to MongoLab, otherwise connect to localhost
 mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds339648.mlab.com:39648/heroku_bw469k9z", {
   useNewUrlParser: true,
