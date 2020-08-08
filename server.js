@@ -15,6 +15,7 @@ app.use(express.static("public"));
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
+// If deployed, connect to MongoLab, otherwise connect to localhost
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
