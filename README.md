@@ -20,8 +20,16 @@ How to use: Navigate to the index page, select New workout and select whether yo
 ---
 ![Screenshot](/assets/images/addWorkouts.png)
 
-Technologies Used: Express, Mongoose, MongoDB
-
 License: ISC
 
 Contributor: Wesley Tran
+
+### Technologies Used
+
+- HTML
+- CSS
+- Javascript
+- NodeJS
+  - Express
+- MongoDB
+  - Mongoose
