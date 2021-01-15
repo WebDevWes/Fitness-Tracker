@@ -18,10 +18,14 @@ app.use(require("./routes/html-routes.js"));
 // Set up promises with Mongoose
 mongoose.Promise = global.Promise;
 // If deployed, connect to MongoLab, otherwise connect to localhost
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://user1:asdfgh1234@cluster0.ely5l.azure.mongodb.net/FitnessTracker?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI ||
+    "mongodb+srv://user1:asdfgh1234@cluster0.ely5l.azure.mongodb.net/FitnessTracker?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // Set the app to listen on port 3000
 app.listen(PORT, () => {
